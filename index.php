@@ -52,6 +52,7 @@
             </form>
         </div>
     </nav>
+    
     <div class="d-flex justify-center items-center h-100">
         <main class="form-signin m-auto w-50 lg:max-w-lg">
             <form>

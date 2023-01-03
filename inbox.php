@@ -7,9 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>Inbox</title>
-
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.1/css/fontawesome.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="styles.css">
 
 </head>
@@ -53,15 +53,18 @@
             </form>
         </div>
     </nav>
-    <div class="container">
+    <div class="d-flex">
+        <div class="ad w-10 bg-sky-200 w-30"></div>
+        <div class="container">
         <div class="msg-container h-100">
-
-            <div class="msg m-2 py-2 px-4 rounded">Hi</div>
-            <div class="msg m-2 py-2 px-4 rounded">Hello</div>
-            <div class="msg m-2 py-2 px-4 rounded">Bye</div>
-
+            <?php for($i = 0; $i<10; $i++) { ?>
+                    <div class="msg m-2 py-2 px-4 rounded text-xs">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, fugiat consequatur ratione odio porro debitis quam cumque! Obcaecati quam minima minus repellendus et. Ipsam commodi suscipit voluptatem doloribus reiciendis eligendi.</div>
+            <?php } ?>
         </div>
     </div>
+        <div class="ad w-10 bg-sky-200 w-30"></div>
+    </div>
+    
 
     <!-- Including Bootstrap JS (with its jQuery dependency) so that dynamic components work -->
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"
